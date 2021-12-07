@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(this).siblings().toggle('hide');
     });
     $( ".nav-icon" ).click(function() {
-        $('.menu').addClass('active');
+        $('nav').addClass('active');
         $('.cover').addClass('active');
     });
     $('.cover').click(function (e) { 

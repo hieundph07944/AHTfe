@@ -1,3 +1,90 @@
+@media all and (max-width: 1835px) {
+    .wrapper {
+        .logo-moble {
+            display: block;
+            margin: auto;
+            text-transform: uppercase;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 20px;
+            height: 40px;
+            width: 200px;
+            border: 2px solid black;
+            line-height: 40px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            color: #000000;
+            display: flex;
+        .logo-text {
+            margin: 0 5.5px;
+        }
+        }
+        .container-fluid {
+            .navbar {
+                justify-content: space-between;
+                .nav-icon {
+                    display: none;
+                    font-size: 24px;
+                    line-height: 45px;
+                    width: 24.5%;
+                }
+                .logo {
+                    text-align: center;
+                    justify-content: space-between;
+                    margin-left: 0px;
+                }
+                nav {
+                    ul.menu {
+                        display: block;
+                        .menu-item {
+                            margin: 0 -13px;
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .icon-right {
+                    width: 12.5%;
+                }
+            }
+        }
+        .container {  
+            .item {
+                margin-left: 0px;
+                margin-right: 15px;
+                .title {
+                    margin: 0 -15px;
+                }
+                .items {
+                    margin: auto;
+                    width: 100%;
+                    .col {
+                        .col-image {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .col-content {
+                            button {
+                                width: 100px;
+                                height: 30px;
+                                left: 8%;
+                                bottom: 85px;
+                            }
+                        }
+                    }
+                }
+            }
+            .main-content{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
 @media all and (max-width: 1200px) {
     .wrapper {
         .logo-moble {
@@ -201,6 +288,7 @@
         }
     }
 }
+
 @media all and (max-width: 991px) {
     .wrapper {
         .header {
@@ -225,32 +313,35 @@
                     display: block;
                     text-align: center;
                     justify-content: space-between;
-                    margin-left: 190px;
                     .logo-text {
                         padding-left: 5px;
                         width: 165px;
                     }
                 }
                 nav {
+                    .transit(all, .5s);
+                    .transformer(translateX(-110%));
+                    width: 20vw;
+                    height: 110vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 999;
+                    background-color: #fff;
+                    box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                     .menu {
-                        .transit(all, .5s);
-                        .transformer(translateX(-110%));
-                        width: 20vw;
-                        height: 110vh;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        z-index: 999;
-                        background-color: #fff;
-                        box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                         .menu-item {
                             display: block;
                             border-bottom: 1px solid #bbb;
                         }
                     }
-                    .active {
-                        .transformer(translateX(0));
-                    }
+                }
+                .active {
+                    .transit(all, .5s);
+                    .transformer(translateX(110%));
+                    background-color: #fff;
+                    width: 20vw;
+                    height: 110vh;
                 }
             }
         }
@@ -381,37 +472,40 @@
                     display: block;
                     font-size: 24px;
                     line-height: 45px;
-                    width: 24.5%;
+                    width: 12.5%;
                 }
                 .logo {
                     display: block;
                     text-align: center;
                     justify-content: space-between;
-                    margin-left: 120px;
                     .logo-text {
                         padding-left: 5px;
                         width: 165px;
                     }
                 }
                 nav {
+                    .transit(all, .5s);
+                    .transformer(translateX(-110%));
+                    width: 20vw;
+                    height: 110vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 999;
+                    background-color: #fff;
+                    box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                     .menu {
-                        .transit(all, .5s);
-                        .transformer(translateX(-110%));
-                        width: 20vw;
-                        height: 110vh;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        z-index: 999;
-                        background-color: #fff;
-                        box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                         .menu-item {
                             display: block;
                             border-bottom: 1px solid #bbb;
                         }
                     }
                     .active {
-                        .transformer(translateX(0));
+                        .transit(all, .5s);
+                        .transformer(translateX(110%));
+                        width: 20vw;
+                        height: 110vh;
+                        background-color: #fff;
                     }
                 }
             }
@@ -551,39 +645,43 @@
                     display: block;
                     font-size: 24px;
                     line-height: 45px;
-                    width: 24.5%;
+                    width: 12.5%;
                 }
                 .logo {
+                    width: 75%;
                     display: block;
                     margin-left: 0;
                     .logo-text {
                         padding-left: 5px;
-                        width: 165px;
+                        margin: 0 auto;
                     }
                 }
                 nav {
+                    .transit(all, .5s);
+                    .transformer(translateX(-110%));
+                    width: 30vw;
+                    height: 110vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 999;
+                    background-color: #fff;
+                    box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                     .menu {
-                        .transit(all, .5s);
-                        .transformer(translateX(-130%));
-                        width: 30vw;
-                        height: 110vh;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        z-index: 999;
-                        background-color: #fff;
-                        box-shadow: 4px -5px 7px -1px rgba(187,187,187,1);
                         .menu-item {
                             display: block;
                             border-bottom: 1px solid #bbb;
                         }
                     }
                     .active {
-                        .transformer(translateX(0));
+                        .transformer(translateX(110%));
+                        width: 30vw;
+                        height: 110vh;
+                        background-color: #fff;
                     }
                 }
                 .icon-right {
-                    width: 40.5%;
+                    width: 30%;
                     .icon-right-inner {
                         &:last-child {
                             display: none;
